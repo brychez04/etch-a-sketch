@@ -1,0 +1,58 @@
+body{
+    display:flex;
+    justify-content: center;
+    padding:16px;
+}
+
+body *{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:18px;
+}
+
+#sketchpad{
+    display:flex;
+    flex-direction: column;
+    border: 30px solid red;
+    border-radius: 20px;
+}
+
+#cells{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+}
+
+#controls{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    gap:18px;
+    border: 30px solid red;
+    max-height: max-content;
+    background-color: red;
+    border-bottom: 0px;
+}
+
+.row{
+    display: flex;
+    flex-grow: 1;
+}
+
+.cell{
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    flex-grow: 1;
+    background-color: white;
+}
+
+#reset, #grid-size{
+    padding:16px;
+    border-radius: 5px;
+    border:0px;
+    background-color: white;
+}
+
+#grid-size{
+    width: 260px;
+}
